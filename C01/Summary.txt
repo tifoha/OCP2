@@ -1,0 +1,25 @@
+Обратить внимание на вызов protected мемберов в static методах классов в другом пакете, даже наследников
+ПРАВИЛА ДЛЯ Overload
+1. Exact match type
+2. Matching a superclass type
+3. Converting to a larger primitive
+4. Convertiong to an autoboxing type
+5. Varargs
+null instanceof Object == false
+"" instanceof Integer not compile
+"" instanceof Function not compile, String is final, if it was not final all been fine
+EQUALS CONTRACT:
+1. reflexive x.equals(x) == true
+2. symmetric x.equals(y) == y.equals(x)
+3. transitive x.equals(z) == y.equals(z) && x.equals(y)
+4. consistent x.equals(y) constantly until modified
+5. x.equals(null) == false
+HASHCODE CONTRACT:
+1. В пределах одной программы hashCode() не должен менятся. Это означает что нельзя включать переменные, которые меняются при вычислении хеш кода.
+    В примере класс hippo включает только имя в хешкод, потому как остальные переменные могут быть изменены.
+2. Если equals() возвращает true тогда и хешкоды должны возвращать одно и тоже значение.
+    hashCode() юзает подмножество переменных которые используются в equals()
+3. Если equals() возвращает false то хешкоды не обязаны возвращать разные значения.
+
+Конструкторы в enum всегда private
+список значений в Енуме всегда идет первым, точка с запятой опциональна только тогда когда нет ничего
