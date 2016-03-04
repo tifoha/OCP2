@@ -34,3 +34,5 @@ HASHCODE CONTRACT:
 |           |               |Local inner|   Anonimus    |
 |   Local   | (Not posible) |   class   |   inner class |
 |___________|_______________|___________|_______________|
+
+Anonymous class can extends only one class of interface

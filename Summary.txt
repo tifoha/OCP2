@@ -1,0 +1,8 @@
+1. Если класс наследуется от двух интерфейсов с одинаковыми методами и хоть один default, тогда класс должено Override этот метод
+2. Сьавить аннотацию @FunctionalInterface на функциональные интерфейсы чтоб на испортить код в дальнейшем
+IMMUTABLE STRATEGY:
+1. Use a constructor to set all properties of the object
+2. Mark all lf the instance variables private and final
+3. Don't define any setters
+4. Don'y allow referenced any mutable objects to be modified of accessed directly
+5. Prevent methods to being overridden(class should be final)
