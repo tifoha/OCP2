@@ -1,5 +1,8 @@
 package functionals;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Created by vitaly on 03.03.16.
  */
@@ -28,6 +31,6 @@ public class Animal {
 
     @Override
     public String toString() {
-        return ToStringBuilder
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.SIMPLE_STYLE);
     }
 }
