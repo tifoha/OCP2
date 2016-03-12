@@ -5,10 +5,23 @@
   <groupId>OCP2</groupId>
   <artifactId>OCP2</artifactId>
   <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <modules>
     <module>C01</module>
     <module>C02</module>
-  </modules>
+        <module>C03</module>
+    </modules>
   <packaging>pom</packaging>
 
   <name>OCP2</name>
